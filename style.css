@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem; 
+    background-color: aquamarine;
+}
+.main-container{
+    margin: auto;
+    width: 60rem;height: fit-content;
+    background-color: blueviolet;
+    text-align: center;
+}
+.header{
+    background-color: rgb(134, 133, 133);
+    padding: 1rem 8rem 1rem 8rem;
+    /* width: 33rem; */
+    /* display: flex;
+    justify-content: center; */
+}
+h1{
+    /* background-color: rgb(3, 117, 3); */
+    padding: 0 1rem 0 1rem;
+    font-size: 1.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.input_container{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    /* background-color: rgb(134, 133, 133); */
+}
+#todo{
+    
+    width: 28rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+#todo:placeholder-shown{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+.button{
+    height: 3rem;
+    width: fit-content;
+
+    background-color: rgb(201, 201, 36);;
+    
+}
+.button_del{
+    height: 3rem;
+    width: fit-content;
+
+    background-color: rgb(201, 201, 36);;
+    
+}
+
+.checked{
+    list-style-type: none;
+    display: block;
+    font-size: 1.5rem;
+    color: white;
+    
+}
+li.checked::before{
+    content: "\2714";
+}
+.unchecked{
+    list-style-type: none;
+    font-size: 1.5rem;
+    color: white;
+    
+}
+li.unchecked::before{
+    content: "\2610";
+}
+
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    /* display: block; */
+    font-size: 1.5rem;
+    color: white;
+}
+.item_header{
+    background-color: rgb(134, 133, 133);
+    padding: 5px 0 5px 0;
+    margin-bottom: 10px;
+    
+}
+.item{
+    background-color: rgb(134, 133, 133);
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 5px 0;
+    margin: auto;
+    margin-bottom: 10px;
+    /* text-decoration: line-through; */
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: rgb(196, 187, 187);
+    color: black;
+}
+/* .item2{
+    background-color: rgb(134, 133, 133);
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0 5px 0;
+    margin: auto;
+    margin-bottom: 10px;
+    text-decoration: line-through;
+} */
+.delete_btn{
+    display: inline-block;
+    text-decoration: none;
+}
+.itemList{
+    display: block;
+    text-align: center;
+}
+
+.para{
+    display: inline;
+    margin-right: 10px;
+    font-size: 1.5rem;    
+}
+
+.footer{
+    margin-top: 3rem;
+    background-color: rgb(134, 133, 133);
+}
+
+.dlt{
+    position: fixed;
+
+}
